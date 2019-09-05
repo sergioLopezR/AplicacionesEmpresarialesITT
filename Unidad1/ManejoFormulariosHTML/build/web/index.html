@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="recursos/estilos.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="recursos/funciones.js"></script>
+    </head>
+    <body>
+        <div id="lateral">
+            <h1>Formulario Registro de Datos</h1>
+
+            <form name="form1" action="/ManejoFormulariosHTML/Servlet" method="post" onsubmit="return validarForma(this);">
+                <table>
+                    <tr>
+                        <td id="color">Usuario: (*)</td>
+                        <td><input type="text" name="usuario"></td>
+                    </tr>
+                    <tr>
+                        <td id="color">Password: (*)</td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td id="color">Tecnologias de Interes: (*) </td>
+                        <td>
+                        <input type="checkbox" name="tecnologia" value="java">Java
+                        <input type="checkbox" name="tecnologia" value="net">.Net
+                        <input type="checkbox" name="tecnologia" value="php">Php
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="color">Genero: (*) </td>
+                        <td>
+                        <input type="radio" name="genero" value="Hombre">Hombre
+                        <input type="radio" name="genero"  value="Mujer">Mujer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="color">Ocupacion: (*) </td>
+                        <td>
+                        <select name="ocupacion">
+                            <option>Seleccionar</option>
+                            <option>Trabajador</option>
+                            <option>Estudiante</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="color">Musica Favorita: </td>
+                        <td>
+                        <select name="musica" multiple size="3">
+                            <option>Rock</option>
+                            <option>Pop</option>
+                            <option>Salsa</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="color">Comentarios:</td>
+                        <td>
+                            <textarea placeholder="Escribir un texto" name="comentario"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" value="Limpiar"></td>
+                        <td><input type="submit" value="Enviar"></td>
+                    </tr>
+                  
+                </table>
+         
+            </form>
+
+        </div>
+        <div id="lateral">Ejercicio 4 - Aplicaciones Empresariales - 10</div>
+        
+    </body>
+</html>
